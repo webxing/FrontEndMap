@@ -5,6 +5,8 @@
 
 如需跟进每日进度，可移步[掘金](https://juejin.im/user/5ab5f0da518825188038e1f6)，我会[在掘金沸点每日发图](https://juejin.im/user/5ab5f0da518825188038e1f6/pins)。
 
+**附：**[高清pdf电子书](https://pan.baidu.com/s/1N5at2n0Yd3fkmQ29dRHMHw) · 【 提取码:  j1rk 】
+
 # 图标含义
 🎈 已完结
 🔥 正在更新中
@@ -15,9 +17,9 @@
 
 🎈 在HTML中使用JavaScript
 
-🔥 基本概念
+🎈 基本概念
 
-🕸 变量、作用域和内存问题
+🔥 变量、作用域和内存问题
 
 🕸 引用类型
 

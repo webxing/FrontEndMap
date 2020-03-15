@@ -7,6 +7,13 @@
 
 暂时列举的一些计划如下所示，如有任何意见或建议，欢迎提issue。
 
+
+# 关于更新
+每天都会绘制思维导图，但是只有当完整的一章或一部分绘制结束我才会将资源上传。
+
+如需跟进每日进度，可移步[掘金](https://juejin.im/user/5ab5f0da518825188038e1f6)，我会[在掘金沸点每日发图](https://juejin.im/user/5ab5f0da518825188038e1f6/pins)。
+
+
 # 图标含义
 🎈 已完结
 🔥 正在更新中
@@ -31,6 +38,8 @@
 
 🕸 性能优化
 
+🕸 数据结构
+
 🕸 ...
 
 
@@ -40,3 +49,8 @@
 🕸 图解HTTP
 
 🕸 ...
+
+# 技术交流群
+由于群人数超过100需要邀请进群，请扫描二维码添加小助手进群。
+
+![微信群](https://upload-images.jianshu.io/upload_images/10518780-6b8ea2af70dd52f1.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
