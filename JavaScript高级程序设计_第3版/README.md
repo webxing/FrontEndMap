@@ -29,13 +29,13 @@
 
 🎈 BOM
 
-🔥 客户端检测
+🎈 客户端检测
 
-🕸 DOM
+🎈 DOM
 
-🕸 DOM 扩展
+🎈 DOM 扩展
 
-🕸 DOM2 和 DOM3
+🔥 DOM2 和 DOM3
 
 🕸 事件
 
