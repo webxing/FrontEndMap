@@ -55,8 +55,6 @@
 
 每天都会更新思维导图，但是只有当完整的一章或一部分绘制结束我才会将资源上传。
 
-如需跟进每日进度，可移步[掘金](https://juejin.im/user/5ab5f0da518825188038e1f6)，我会[在掘金沸点每日发图](https://juejin.im/user/5ab5f0da518825188038e1f6/pins)。
-
 ---
 本项目所有思维导图均使用 XMindZEN 10.0.2 绘制。
 **附：**[XMind ZEN 破解版](https://pan.baidu.com/s/1qnWt4eRhgXLEN8GJaa_hZg) · 【 提取码:  qd66 】

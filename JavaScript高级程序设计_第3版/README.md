@@ -3,8 +3,6 @@
 
 每天都会绘制，但是只有当完整的一章绘制结束我才会将资源上传。
 
-如需跟进每日进度，可移步[掘金](https://juejin.im/user/5ab5f0da518825188038e1f6)，我会[在掘金沸点每日发图](https://juejin.im/user/5ab5f0da518825188038e1f6/pins)。
-
 **附：**[高清pdf电子书](https://pan.baidu.com/s/1N5at2n0Yd3fkmQ29dRHMHw) · 【 提取码:  j1rk 】
 
 # 图标含义
@@ -39,9 +37,9 @@
 
 🎈 事件
 
-🔥 表单脚本
+🎈 表单脚本
 
-🕸 使用 Canvas 绘图
+🔥 使用 Canvas 绘图
 
 🕸 HTML5 脚本编程
 
