@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id='box' draggable='true'>drag</div>
+
+
+
+  <div id='droptarget'>droptarget</div>
+
+
+</body>
+
+
+<script>
+  window.onload = function () {
+    box.addEventListener('dragstart', (e) => {
+      console.log('dragstart');
+      e.dataTransfer.setData('text', Math.random())
+      e.dataTransfer.effectAllowed = 'copy'
+
+
+      // let img = new Image()
+      // img.src = '../../bg.jpg'
+      // e.dataTransfer.setDragImage(img, 0, 0)
+    })
+    box.addEventListener('drag', () => {
+      // console.log('drag');
+    })
+    box.addEventListener('dragend', () => {
+      console.log('dragend');
+    })
+
+
+
+
+    droptarget.addEventListener('dragenter', (e) => {
+      console.log('dragenter------');
+      e.preventDefault()
+
+      droptarget.style.background = 'red'
+
+      e.dataTransfer.dropEffect = 'copy'
+
+    })
+    droptarget.addEventListener('dragover', (e) => {
+      console.log('dragover');
+      e.preventDefault()
+    })
+
+    droptarget.addEventListener('dragleave', (e) => {
+      console.log('dragleave--------');
+      droptarget.style.background = 'white'
+    })
+    droptarget.addEventListener('drop', (e) => {
+      console.log('drop---------', e.dataTransfer.getData("text"));
+      e.preventDefault()
+      droptarget.style.background = 'white'
+      droptarget.textContent = e.dataTransfer.getData("text")
+    })
+  }
+</script>
+
+
+
+<style>
+  #box {
+    border: 1px solid blue;
+    width: 200px;
+    height: 200px;
+  }
+
+  #droptarget {
+    border: 1px solid red;
+    width: 400px;
+    height: 400px;
+  }
+</style>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+
+
+<body>
+
+  <div id="add">添加</div>
+  <div id="replace">替换</div>
+
+</body>
+
+
+<script>
+  console.log(history);
+  window.onload = function () {
+    // pushState
+    add.addEventListener('click', () => {
+      let state = { rdm: Math.random() + '-' + history.length }
+      history.pushState(state, null, '')
+
+      processState(state)
+    })
+
+
+    // replaceState
+    replace.addEventListener('click', () => {
+      let state = { rdm: Math.random() + '-' + history.length }
+      history.replaceState(state, null)
+
+      processState(state)
+    })
+
+
+
+    // popstate
+    window.addEventListener('popstate', (e) => {
+      let state = e.state
+      if (state) { //第一个页面加载时 state 为空
+        processState(state);
+      }
+    })
+
+  }
+
+
+  function processState(state) {
+    console.log(state, history);
+    let dom = document.createElement('div')
+    dom.innerText = JSON.stringify(state) + 'length:' + history.length
+
+    document.body.appendChild(dom)
+
+  }
+</script>
+
+</html>

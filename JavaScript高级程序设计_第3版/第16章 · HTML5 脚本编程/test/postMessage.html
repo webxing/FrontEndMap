@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  postMessage
+
+
+  <form id="form">
+    <input type="text" placeholder="Enter message" name="message" autocomplete="off">
+    <input type="submit" value="Click to send">
+  </form>
+
+  <iframe src="./receiveMessage.html" id="iframe" style="display:block;height:300px"></iframe>
+
+  <script>
+    form.onsubmit = function () {
+      iframe.contentWindow.postMessage(this.message.value, '*');
+      return false;
+    };
+  </script>
+
+
+
+
+  <div id='openNew'>open new window!</div>
+
+
+</body>
+
+<script>
+  openNew.addEventListener('click', () => {
+    let opener = window.open('./receiveMessage.html')
+    console.log(opener);
+
+    setTimeout(() => {
+      opener.postMessage('我是你爸爸', '*')
+    }, 1000);
+  }, false)
+</script>
+
+</html>
