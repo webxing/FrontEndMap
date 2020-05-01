@@ -45,9 +45,9 @@
 
 🎈 错误处理与调试
 
-🔥 JavaScript 与 XML
+🎈 JavaScript 与 XML
 
-🕸 E4X
+🔥 E4X
 
 🕸 JSON
 
