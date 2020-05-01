@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <img src='./28316967963565703_580x580.png' /> -->
+  <canvas id="drawing" width=" 1000" height="1000">A drawing of something.</canvas>
+</body>
+
+<script>
+  var context = drawing.getContext("2d");
+
+  context.save();
+
+  context.lineWidth = 20
+
+  // 绘制矩形
+  context.strokeStyle = "#000000";
+  context.strokeRect(400, 500, 200, 200);
+
+  context.strokeStyle = "rgba(0,0,255,0.5)";
+  context.strokeRect(430, 530, 200, 200);
+
+
+  // 绘制线条
+  context.strokeStyle = "#000000";
+  context.beginPath();
+  context.lineCap = 'butt'
+  context.moveTo(400, 200);
+  context.lineTo(400, 250);
+  context.stroke();
+
+  context.beginPath();
+  context.lineCap = 'round'
+  context.moveTo(500, 200);
+  context.lineTo(500, 250);
+  context.stroke();
+
+  context.beginPath();
+  context.lineCap = 'square'
+  context.moveTo(600, 200);
+  context.lineTo(600, 250);
+  context.stroke();
+
+
+  context.beginPath();
+  context.lineJoin = 'round'
+  context.moveTo(400, 300);
+  context.lineTo(450, 300);
+  context.lineTo(450, 350);
+  context.stroke();
+
+  context.beginPath();
+  context.lineJoin = 'bevel'
+  context.moveTo(500, 300);
+  context.lineTo(550, 300);
+  context.lineTo(550, 350);
+  context.stroke();
+
+  context.beginPath();
+  context.lineJoin = 'miter'
+  context.moveTo(600, 300);
+  context.lineTo(650, 300);
+  context.lineTo(650, 350);
+  context.stroke();
+
+
+
+  // 测试
+  context.lineCap = 'butt'
+  context.beginPath();
+  context.strokeStyle = "#000000";
+  context.moveTo(400, 50);
+  context.lineTo(400, 100);
+  context.stroke();
+
+  context.beginPath();
+  context.strokeStyle = "#0000ff";
+  context.moveTo(400, 100);
+  context.lineTo(450, 100);
+  context.stroke();
+
+
+  context.lineCap = 'round'
+  context.beginPath();
+  context.strokeStyle = "#000000";
+  context.moveTo(500, 50);
+  context.lineTo(500, 100);
+  context.stroke();
+
+  context.beginPath();
+  context.strokeStyle = "#0000ff";
+  context.moveTo(500, 100);
+  context.lineTo(550, 100);
+  context.stroke();
+
+
+  context.lineCap = 'square'
+  context.beginPath();
+  context.strokeStyle = "#000000";
+  context.moveTo(600, 50);
+  context.lineTo(600, 100);
+  context.stroke();
+
+  context.beginPath();
+  context.strokeStyle = "#0000ff";
+  context.moveTo(600, 100);
+  context.lineTo(650, 100);
+  context.stroke();
+
+
+
+
+  // 绘制圆形
+  context.beginPath();
+  context.moveTo(200, 200);
+  // context.moveTo(300, 200);
+  context.arc(200, 200, 100, 0, Math.PI * 3 / 2, false);
+  context.stroke();
+  context.fill();
+
+  context.beginPath();
+  context.moveTo(200, 200);
+  context.arc(200, 200, 30, 0, Math.PI * 2, false);
+  context.clip();
+
+  context.beginPath();
+  context.fillStyle = "red";
+  context.moveTo(200, 200);
+  context.arc(200, 200, 100, 0, Math.PI * 2, false);
+  context.fill();
+
+  context.restore();
+
+  context.beginPath();
+  context.fillStyle = "green";
+  context.moveTo(0, 0);
+  context.arc(0, 0, 80, 0, Math.PI * 2, false);
+  context.fill();
+
+
+
+  // 文字测试
+  context.beginPath();
+  context.moveTo(100, 500);
+  context.lineTo(300, 500);
+  context.moveTo(100, 500);
+  context.lineTo(100, 600);
+  context.stroke();
+
+  context.font = "bold 24px Arial";
+  context.textAlign = "start";
+  context.textBaseline = "top";
+  context.fillText('前端攻城狮', 100, 500)
+  context.strokeText('前端攻城狮', 100, 540)
+
+  let { width } = context.measureText('前端攻城狮')
+  console.log(width);
+  context.fillText('前端攻城狮', 100, 580, 60)
+
+
+  // 变换
+  // context.beginPath();
+
+  // context.translate(100, 400);
+
+  // context.rotate(1);
+
+  // context.moveTo(0, 0);
+  // context.lineTo(0, -85);
+
+  // context.stroke();
+
+
+  // save & restore
+  context.fillStyle = "red";
+  context.save();
+
+  context.fillStyle = "green";
+  context.translate(100, 300);
+  context.save();
+
+  context.fillStyle = "blue";
+  context.fillRect(0, 0, 50, 100);
+
+  context.restore();
+  context.fillRect(10, 10, 50, 150);
+
+  context.restore();
+  context.fillRect(0, 300, 50, 200);
+
+
+
+
+  //设置阴影
+  context.shadowOffsetX = 5;
+  context.shadowOffsetY = 5;
+  context.shadowBlur = 4;
+  context.shadowColor = "rgba(0, 0, 0, 0.5)";
+
+  context.fillStyle = "#ff0000";
+  context.fillRect(200, 10, 50, 50);
+
+
+  // 渐变
+  var gradient = context.createLinearGradient(0, 0, 50, 50);
+  gradient.addColorStop(0, "white");
+  gradient.addColorStop(1, "black");
+
+  context.fillStyle = gradient;
+  context.fillRect(0, 0, 50, 50);
+
+  var gradient = context.createRadialGradient(100, 100, 10, 100, 100, 30);
+  gradient.addColorStop(0, "white");
+  gradient.addColorStop(1, "black");
+  context.fillStyle = gradient;
+  context.fillRect(70, 70, 60, 60);
+
+
+
+  // 模式
+
+  // window.onload = function () {
+  //   var image = document.images[0],
+  //     pattern = context.createPattern(image, "repeat");
+  //   console.log(image, pattern);
+
+  //   context.fillStyle = pattern;
+  //   context.fillRect(500, 800, 800, 800);
+  //   context.strokeStyle = pattern;
+  //   context.strokeRect(500, 800, 800, 800);
+  // }
+
+
+
+  // 图像数据
+  var imageData, data,
+    i, len, average,
+    red, green, blue, alpha;
+  imageData = context.getImageData(0, 0, context.canvas.width, context.canvas.height);
+  console.log(imageData);
+
+  data = imageData.data
+
+
+  // 灰阶过滤器
+  for (i = 0, len = data.length; i < len; i += 4) {
+    red = data[i];
+    green = data[i + 1];
+    blue = data[i + 2];
+    alpha = data[i + 3];
+
+    //求得 rgb 平均值
+    average = Math.floor((red + green + blue) / 3);
+
+    //设置颜色值，透明度不变 
+    data[i] = average;
+    data[i + 1] = average;
+    data[i + 2] = average;
+  }
+
+
+  //回写图像数据并显示结果
+  console.log('灰阶数据', data);
+  // imageData.data = data;
+  // context.putImageData(imageData, 0, 0);
+
+
+
+
+  // 合成
+  context.fillStyle = "#ff0000";
+  context.fillRect(10, 10, 50, 50);
+
+  context.globalAlpha = 0.5;
+  context.globalCompositeOperation = "destination-over";
+
+  context.fillStyle = "rgba(0,0,255,1)";
+  context.fillRect(30, 30, 50, 50);
+
+  context.globalAlpha = 1;
+  context.fillStyle = "#ff0000";
+  context.fillRect(50, 50, 50, 50);
+
+
+
+
+
+  // 生成图片
+  var src = drawing.toDataURL('images/png')
+  var img = document.createElement('img')
+  img.style.width = '400px'
+  img.style.height = '400px'
+  img.src = src
+  document.body.appendChild(img)
+
+</script>
+
+</html>

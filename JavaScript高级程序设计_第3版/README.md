@@ -39,13 +39,13 @@
 
 🎈 表单脚本
 
-🔥 使用 Canvas 绘图
+🎈 使用 Canvas 绘图
 
-🕸 HTML5 脚本编程
+🎈 HTML5 脚本编程
 
-🕸 错误处理与调试
+🎈 错误处理与调试
 
-🕸 JavaScript 与 XML
+🔥 JavaScript 与 XML
 
 🕸 E4X
 
