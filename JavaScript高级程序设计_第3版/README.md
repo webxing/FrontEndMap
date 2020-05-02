@@ -47,9 +47,9 @@
 
 🎈 JavaScript 与 XML
 
-🔥 E4X
+🎈 E4X
 
-🕸 JSON
+🔥 JSON
 
 🕸 Ajax 与 Comet
 
