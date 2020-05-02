@@ -49,9 +49,9 @@
 
 🎈 E4X
 
-🔥 JSON
+🎈 JSON
 
-🕸 Ajax 与 Comet
+🔥 Ajax 与 Comet
 
 🕸 高级技巧
 
