@@ -51,9 +51,9 @@
 
 🎈 JSON
 
-🔥 Ajax 与 Comet
+🎈 Ajax 与 Comet
 
-🕸 高级技巧
+🔥 高级技巧
 
 🕸 离线应用与客户端存储
 
