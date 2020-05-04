@@ -57,7 +57,8 @@
 
 ---
 本项目所有思维导图均使用 XMindZEN 10.0.2 绘制。
-**附：**[XMind ZEN 破解版](https://pan.baidu.com/s/1qnWt4eRhgXLEN8GJaa_hZg) · 【 提取码:  qd66 】
+
+**附：**[XMind ZEN 破解版](https://pan.baidu.com/s/1qUFJ5ajO7_Pv_SJLUCByUQ) · 【 提取码:  eoib 】
 
 你可以用此项目来迅速巩固自己的知识体系，也可以由此步入前端的世界，希望可以对你有所帮助，个人精力和经验有限，如有错误之处，忘指出。
 

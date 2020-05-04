@@ -3,7 +3,7 @@
 
 每天都会绘制，但是只有当完整的一章绘制结束我才会将资源上传。
 
-**附：**[高清pdf电子书](https://pan.baidu.com/s/1N5at2n0Yd3fkmQ29dRHMHw) · 【 提取码:  j1rk 】
+**附：**[高清pdf电子书](https://pan.baidu.com/s/1PJPLOYpU0KS4DGucsfXouw) · 【 提取码:  64il 】
 
 # 图标含义
 🎈 已完结
@@ -53,9 +53,9 @@
 
 🎈 Ajax 与 Comet
 
-🔥 高级技巧
+🎈 高级技巧
 
-🕸 离线应用与客户端存储
+🔥 离线应用与客户端存储
 
 🕸 最佳实践
 
