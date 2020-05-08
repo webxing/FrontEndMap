@@ -68,5 +68,5 @@
 # 技术交流群
 由于群人数超过100需要邀请进群，请扫描二维码添加小助手进群。
 
-<img src='https://github.com/webxing/FrontEndMap/blob/master/group.jpeg' width='300'>
+<img src='./group.jpeg' width='300'>
 
